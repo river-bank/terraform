@@ -5,7 +5,7 @@ resource "aws_instance" "MyFirstInstnace" {
   ami           = "ami-05bfd03d0709e3ecb"
   instance_type = "t2.micro"
 
-  tags{
+  tags = {
     Name = "threedemoinstances"
   }
 }
