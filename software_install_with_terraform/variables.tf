@@ -17,10 +17,10 @@ variable "Security_Group"{
 variable "AMIS" {
     type = map
     default = {
-        eu-west-1 = "ami-0f40c8f97004632f9"
-        eu-west-2 = "ami-05692172625678b4e"
-        eu-south-1 = "ami-0352d5a37fb4f603f"
-        eu-north-1 = "ami-0f40c8f97004632f9"
+        eu-west-1  = "ami-082bec92abb02aba4"
+        eu-west-2  = "ami-0f93f0eac996e0dd7"
+        eu-south-1 = "ami-079727333a2a630ff"
+        eu-north-1 = "ami-09ec355453ac004a3"
     }
 }
 
