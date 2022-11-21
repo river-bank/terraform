@@ -6,7 +6,7 @@ data "aws_ami" "latest-ubuntu" {
 
   filter { 
     name = "name"
-    values = "ubuntu/images/hvm-ssd/ubuntu-kinetic-22.10-amd64-server-*"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-kinetic-22.10-amd64-server-*"]
   }
 
   filter {
