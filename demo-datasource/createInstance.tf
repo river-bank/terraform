@@ -2,7 +2,7 @@ data "aws_availability_zones" "avilable" {}
 
 data "aws_ami" "latest-ubuntu" {
   most_recent = true
-  owner = [099720109477]
+  owner = ["099720109477"]
 
   filter { 
     name = "name"
