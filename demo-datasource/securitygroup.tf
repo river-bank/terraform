@@ -7,9 +7,11 @@ resource "aws_security_group" "sg-custom_eu_west" {
     name = "sg-custom_eu_west"
 
     ingress   {
-      cidr_blocks = data.aws_ip_ranges.eu_west_ip_range
-      from_port = 443
-      protocol = "tcp"      
+      
+      from_port = "443"
+      to_port =   "443"
+      protocol =  "tcp"  
+      cidr_blocks = data.aws_ip_ranges.eu_west_ip_range.cidr_blocks 
     } 
 
     tags = {
