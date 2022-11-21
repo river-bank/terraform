@@ -3,8 +3,8 @@ data "aws_ip_ranges" "eu_west_ip_range" {
     services = [ "ec2" ]
 }
 
-resource "aws_security_group" "sg-custom_eu_west" {
-    name = "sg-custom_eu_west"
+resource "aws_security_group" "sa-custom_eu_west" {
+    name = "sa-custom_eu_west"
 
     ingress   {
       
