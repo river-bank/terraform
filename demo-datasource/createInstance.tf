@@ -24,13 +24,13 @@ resource "aws_instance" "MyFirstInstance" {
     command = "echo aws.instance.MyFirstInstance.private_ip >> my_private_ips.txt"
   
   }
-
   tags = {
     Name = "custom_instance"
   }
+}
 
   output "public_ip" {
     value = aws_instance.MyFirstInstance.public_ip
   }
   
- }
+ 
