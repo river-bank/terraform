@@ -9,10 +9,12 @@ variable "AWS_REGION" {
 default = "eu-west-1"
 }
 
+/*
 variable "Security_Group"{
     type = list
     default = ["sg-24076", "sg-90890", "sg-456789"]
 }
+*/
 
 variable "AMIS" {
     type = map
